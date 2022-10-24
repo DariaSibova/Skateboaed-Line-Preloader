@@ -25,3 +25,35 @@
   
   
   }
+
+  main {
+    padding: 1.5em 0;
+  }
+  
+  .pl {
+    width: 11em;
+    height: 10em;
+  }
+  .pl__ring,
+  .pl__worm1,
+  .pl__worm2,
+  .pl__worm3 {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .pl__ring {
+    stroke: hsla(var(--hue),10%,10%,0.1);
+    transition: stroke var(--themeTrans);
+  }
+  .pl__worm1 {
+    animation-name: worm1;
+  }
+  .pl__worm2 {
+    animation-name: worm2;
+    transform-origin: 32px 88px;
+  }
+  .pl__worm3 {
+    animation-name: worm3;
+    transform-origin: 144px 88px;
+  }
+  
