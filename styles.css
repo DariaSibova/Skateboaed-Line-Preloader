@@ -4,3 +4,12 @@
     margin: 0;
     padding: 0%;
   }
+
+  :root{
+    --hue:223;
+    --bg:hsl(var(--hue),10%,90%);
+    --fg:hsl(var(--hue),10%,10%);
+  --themeTrans:0.3s;
+  font-size: calc(16px + (24 - 16)*(100vw - 320px) / (1280 - 320));
+  
+  }
