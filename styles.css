@@ -57,3 +57,14 @@
     transform-origin: 144px 88px;
   }
   
+  /* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue),10%,10%);
+      --fg: hsl(var(--hue),10%,90%);
+    }
+    .pl__ring {
+      stroke: hsla(var(--hue),10%,90%,0.1);
+    }
+  }
+  
